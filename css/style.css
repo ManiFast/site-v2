@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+nav {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    background: #121213;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(33, 33, 33, 0.8);
+}
+
+body {
+    background: #111;
+}
+
+#menu {
+    float: left;
+    right: 80px;
+    position: fixed;
+}
+
+#particles-js {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+li {
+    padding-left: 40px;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 20px;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.menu-icon {
+    animation: showing 0.2s steps(60) 0.1s 1 normal both;
+}
+
+#log {
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+    float: left;
+    font-weight: 400;
+    margin-left: 80px;
+    line-height: 80px;
+    user-select: text;
+}
+
+#menu > li > a {
+    padding: 30px 0px 30px 0px;
+    color: #aaa;
+    transition: 0.5s color;
+    text-decoration: none;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.co2 {
+    top: 50%;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    color: #ababac;
+    font-size: 16px;
+    user-select: text;
+    font-weight: 500;
+    font-family: 'Open Sans';
+}
+
+.pc {
+    margin-top: 80px;
+    width: 100%;
+    position: fixed;
+    height: 3px;
+    background: rgb(41, 41, 41);
+}
+
+.pb {
+    height: 100%;
+    background: #00E4FF;
+    width: 0%;
+}
+
+#menu > li > a:hover {
+    color: #fff;
+    transition: 0.5s all;
+}
+
+@keyframes showing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+li > a:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    border-bottom: 3px solid #00E4FF;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    left: 50%;
+    bottom: 25px;
+}
+
+li > a:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #b6b6b6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.welcome {
+    top: -100px;
+    color: #ddd;
+    font-family: 'Rubik';
+    font-size: 50px;
+    letter-spacing: 0px;
+    transition: letter-spacing 2s;
+    animation: showing 0.8s steps(100) 0.4s 1 normal both;
+    position: fixed;
+}
+
+.bord {
+    color: #ddd;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    font-size: 25px;
+    letter-spacing: 0px;
+    transition: letter-spacing 2s;
+    animation: showing 2s steps(100) 2s 1 normal both;
+}
+
+
+.welcome:hover {
+    transition: letter-spacing 2s;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+
+.welcome:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    border-bottom: 3px solid #00E4FF;
+    transition: width 1.4s, left 1.4s;
+    left: 50%;
+    top: 50px;
+}
+
+.welcome:hover:before {
+    width: 98%;
+    left: 0px;
+    border-bottom: 3px solid #00E4FF;
+}
+
+.sit {
+    top: 44%;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sites {
+    top: 45%;
+
+    transform: translateY(-50%);
+    margin-top: 75px;
+    position: fixed;
+}
+
+.sites > a {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    transition: filter .2s;
+    filter: invert(50%);
+}
+
+#news, #about, #contacts {
+    cursor: not-allowed;
+}
+
+.sites > a:hover {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    filter: invert(0%);
+    transition: filter .2s;
+}
+
+
+@media (max-width: 768px) {
+    .welcome:hover {
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        zoom: 0.95;
+    }
+}
+
+.sites {
+    margin-top: 100px;
+}
+
+
+.links > div {
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #252628;
+    transition: letter-spacing 0.5s, background-color 0.5s;
+    animation: showing 1.0s steps(100) 0.4s 1 normal both;
+}
+
+.links > div > object {
+
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    filter: invert(90%);
+}
+
+
+.links > div > a{
+    color: #ddd;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-right: 52px;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.dc > object {
+    height: 25px !important;
+    margin-top: 11px !important;
+    margin-left: 19px !important;
+}
+
+.tg > object {
+    height: 35px !important;
+    margin-top: 7px !important;
+    margin-left: 17px !important;
+}
+
+.links > div:hover {
+    transition: letter-spacing 0.5s, background-color 0.5s;
+    letter-spacing: 2px;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #2b2c30;
+    cursor: pointer;
+}
+
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

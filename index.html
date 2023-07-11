@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru"><head><style class="adjust-screen-brightness" media="screen">html::before {
+  content: " ";
+  z-index: 2147483647;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 30, 55, 0.2);
+}</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="ManiFast">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/silka.css">
+    <link rel="stylesheet" href="css/svg.css">
+    <style>
+        #home:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            border-bottom: 3px solid #00E4FF;
+            border-radius: 2px;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+            left: 0%;
+            bottom: 25px;
+        }
+
+        #menu>li>#home {
+            color: #fff;
+        }
+
+		body { 
+			-ms-user-select: none; 
+			-moz-user-select: none; 
+			-webkit-user-select: none; 
+			user-select: none; 
+		}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>ManiFast</title>
+    
+   
+    <link rel="apple-touch-icon" sizes="180x180" href=favicon3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon3/favicon-16x16.png">
+    <link rel="manifest" href="favicon3/site.webmanifest">
+
+</head>
+<body>
+	<!-- count particles 
+	<div class="count-particles">
+	  <span class="js-count-particles">--</span> particles
+	</div>
+	-->
+
+	<!-- particles.js container -->
+	<div id="particles-js"></div>
+
+    <div class="navbar">
+        <!--<img src="logo.png" class="logo-img" alt="Logo">-->
+        <nav style="left: 0;width: 100%;position: fixed;background-color: rgba(53, 53, 53, 0.8);">
+            <span id="log">manifast.ru</span>
+            <ul id="menu">
+                <li><a id="home" href="">главная</a></li>
+            </ul>
+
+            <div class="pc">
+                <div class="pb" id="mb"></div>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <div class="main">
+        <div class="sites">
+            <div class="welcome">ManiFast<br>
+                <div class="bord" style="font-size: 20px">«дураки не любят гениальных...»</div>
+            </div>
+            <div class="links">
+                <div class="yt">
+                    <a href="https://www.youtube.com/@Mani_Fast/">YouTube</a>
+                </div>
+                <div class="gh">
+                    <object data="ManiFast_files/gh.svg" type="image/svg+xml"></object>
+                    <a href="https://github.com/ManiFast">GitHub</a>
+                </div>
+				<div class="tg">
+                    <object data="ManiFast_files/tg.svg" type="image/svg+xml"></object>
+                    <a href="https://t.me/Mani_Fast">Telegram</a>
+                </div>
+                <div class="vk">
+                    <object data="ManiFast_files/vk.svg" type="image/svg+xml"></object>
+                    <a href="https://vk.com/mani__fast">VK</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="copyright">© 2023 ManiFast иуиуиуиу хах)</div>
+
+    <script>
+        window.onscroll = function () { scroll() };
+
+        function scroll() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("mb").style.width = scrolled + "%";
+        }
+        
+    </script>
+	<!-- scripts -->
+		<script src="particles.js"></script>
+		<script src="js/app.js"></script>
+
+		<!-- stats.js
+		<script src="js/lib/stats.js"></script>
+		<script>
+		  var count_particles, stats, update;
+		  stats = new Stats;
+		  stats.setMode(0);
+		  stats.domElement.style.position = 'absolute';
+		  stats.domElement.style.left = '0px';
+		  stats.domElement.style.top = '0px';
+		  document.body.appendChild(stats.domElement);
+		  count_particles = document.querySelector('.js-count-particles');
+		  update = function() {
+			stats.begin();
+			stats.end();
+			if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+			  count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+			}
+			requestAnimationFrame(update);
+		  };
+		  requestAnimationFrame(update);
+		</script>
+		-->
+
+
+
+</body></html>
